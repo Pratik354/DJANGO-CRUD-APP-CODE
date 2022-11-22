@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <h2>hello pratik</h2>
+    <table>
+        <form method='POST' action='/update'>
+            {% csrf_token %}
+            <tr>
+                <td>ID</td><td><input type='number' name='id' value={{ID}}></td>
+            </tr>
+            <tr>
+                <td>FIRST_NAME</td><td><input type='text' name='first' value={{FIRST_NAME}}></td>
+            </tr>
+            <tr>
+                <td>LAST_NAME</td><td><input type='text' name='last' value={{LAST_NAME}}></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td><td><input type='email' name='mail' value={{EMAIL}}></td>
+            </tr>
+            <tr>
+                <td>NUMBER</td><td><input type='number' name='num' value={{NUMBER}}></td>
+            </tr>
+            <tr>
+                <td>AGE</td><td><input type='number' name='age' value={{AGE}}></td>
+            </tr>
+            <tr>
+                <td>GENDER</td><td><input type='radio' name='gender' value={{GENDER}}>MALE<input type='radio' name='gender' value={{GNDER}}>FEMALE</td>
+            </tr>
+            <tr>
+                <td></td><td><input type='submit' value='update' ></td>
+            </tr>
+        </form>
+    </table>
+</center>
+</body>
+</html>

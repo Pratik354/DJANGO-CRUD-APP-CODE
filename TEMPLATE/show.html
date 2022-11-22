@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border='1'>
+        <tr>
+            <td>ID</td>
+            <td>FIRST_NAME</td>
+            <td>LAST_NAME</td>
+            <td>EMAIL</td>
+            <td>NUMBER</td>
+            <td>AGE</td>
+            <td>GENDER</td>
+            <td>EDIT</td>
+            <td>DELETE</td>
+
+        </tr>
+        {% for d in data%}
+        <tr>
+            <td>{{d.ID}}</td>
+            <td>{{d.FIRST_NAME}}</td>
+            <td>{{d.LAST_NAME}}</td>
+            <td>{{d.EMAIL}}</td>
+            <td>{{d.NUMBER}}</td>
+            <td>{{d.AGE}}</td>
+            <td>{{d.GENDER}}</td>
+            <td><a href="/edit?id={{d.ID}}">EDIT</a></td>
+            <td><a href="/delete?id={{d.ID}}">DELETE</a></td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

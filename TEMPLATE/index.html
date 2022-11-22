@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <h2>hello pratik</h2>
+    <table>
+        <form method='POST'>
+            {% csrf_token %}
+            <tr>
+                <td>FIRST_NAME</td><td><input type='text' name='first' requires></td>
+            </tr>
+            <tr>
+                <td>LAST_NAME</td><td><input type='text' name='last' requires></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td><td><input type='email' name='mail' requires></td>
+            </tr>
+            <tr>
+                <td>NUMBER</td><td><input type='number' name='num' requires></td>
+            </tr>
+            <tr>
+                <td>AGE</td><td><input type='number' name='age' requires></td>
+            </tr>
+            <tr>
+                <td>GENDER</td><td><input type='radio' name='gender' requires>MALE<input type='radio' name='gender'>FEMALE</td>
+            </tr>
+            <tr>
+                <td></td><td><input type='submit' value='submit' ></td>
+            </tr>
+        </form>
+    </table>
+</center>
+</body>
+</html>
